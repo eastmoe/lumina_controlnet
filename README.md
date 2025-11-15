@@ -119,7 +119,9 @@
 #### 当前问题
 
 由于我本人能力不足，无法解决训练爆显存的问题:
-```torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 778.00 MiB. GPU 0 has a total capacity of 47.38 GiB of which 612.69 MiB is free. Including non-PyTorch memory, this process has 46.78 GiB memory in use. Of the allocated memory 44.78 GiB is allocated by PyTorch, and 1.58 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+
+```
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 778.00 MiB. GPU 0 has a total capacity of 47.38 GiB of which 612.69 MiB is free. Including non-PyTorch memory, this process has 46.78 GiB memory in use. Of the allocated memory 44.78 GiB is allocated by PyTorch, and 1.58 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
   0%|                                                                                         | 0/20000 [00:01<?, ?it/s]
 root@autodl-container-f4ac42b1b8-d9c9196a:~/kohya_ss#
 ```
@@ -131,5 +133,6 @@ root@autodl-container-f4ac42b1b8-d9c9196a:~/kohya_ss#
 - [sdbds/sd-scripts](https://github.com/sdbds/sd-scripts/tree/lumina)
 - [Kohya_ss/sd-scripts](https://github.com/kohya-ss/sd-scripts)
 - [Gemini 2.5 Pro in Google AI Studio](https://aistudio.google.com/prompts/new_chat)
+
 
 
