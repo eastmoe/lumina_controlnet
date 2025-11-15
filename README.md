@@ -45,7 +45,9 @@
 
 **（下面的命令只是演示格式，其中存在一些错误或不当的部分）**
 
-```python lumina_controlnet.py      --console_log_level INFO     --console_log_file "D:\\kohya_ss\\logs\\train\\lumina2.log"     --pretrained_model_name_or_path    "D:\\LuminaCtTrain\\models\\diffusion_model\\NetaYumev35_pretrained_unet.safetensors"     --gemma2 "D:\\LuminaCtTrain\\models\\text_encoder\\gemma_2_2b_fp16.safetensors" --tokenizer_cache_dir "D:\\LuminaCtTrain\\models\\text_encoder"   --gemma2_max_token_length 4096     --ae "D:\\LuminaCtTrain\\models\\vae\\flux_ae.safetensors"     --train_data_dir "D:\\kohya_ss\\dataset\\Lumina2Dataset\\image"     --conditioning_data_dir "D:\\kohya_ss\\dataset\\Lumina2Dataset\\deepth"         --resolution 1024     --train_batch_size 1     --caption_extension "txt"     --output_dir  "D:\\kohya_ss\\outputs\\lumina2Deepth"     --output_name "lumina2_deepth_controlnet"     --save_every_n_steps 100     --xformers     --sdpa     --max_train_steps 20000     --seed 23672323     --mixed_precision fp16     --full_bf16  --gradient_checkpointing    --clip_skip 2     --metadata_author "星月StarMoon"       --optimizer_type AdamW8bit     --learning_rate 5e-6     --lr_scheduler cosine     --lr_warmup_steps 100     --save_model_as safetensors```
+```
+python lumina_controlnet.py      --console_log_level INFO     --console_log_file "D:\\kohya_ss\\logs\\train\\lumina2.log"     --pretrained_model_name_or_path    "D:\\LuminaCtTrain\\models\\diffusion_model\\NetaYumev35_pretrained_unet.safetensors"     --gemma2 "D:\\LuminaCtTrain\\models\\text_encoder\\gemma_2_2b_fp16.safetensors" --tokenizer_cache_dir "D:\\LuminaCtTrain\\models\\text_encoder"   --gemma2_max_token_length 4096     --ae "D:\\LuminaCtTrain\\models\\vae\\flux_ae.safetensors"     --train_data_dir "D:\\kohya_ss\\dataset\\Lumina2Dataset\\image"     --conditioning_data_dir "D:\\kohya_ss\\dataset\\Lumina2Dataset\\deepth"         --resolution 1024     --train_batch_size 1     --caption_extension "txt"     --output_dir  "D:\\kohya_ss\\outputs\\lumina2Deepth"     --output_name "lumina2_deepth_controlnet"     --save_every_n_steps 100     --xformers     --sdpa     --max_train_steps 20000     --seed 23672323     --mixed_precision fp16     --full_bf16  --gradient_checkpointing    --clip_skip 2     --metadata_author "星月StarMoon"       --optimizer_type AdamW8bit     --learning_rate 5e-6     --lr_scheduler cosine     --lr_warmup_steps 100     --save_model_as safetensors
+```
 
 
 #### 命令说明：
@@ -133,6 +135,7 @@ root@autodl-container-f4ac42b1b8-d9c9196a:~/kohya_ss#
 - [sdbds/sd-scripts](https://github.com/sdbds/sd-scripts/tree/lumina)
 - [Kohya_ss/sd-scripts](https://github.com/kohya-ss/sd-scripts)
 - [Gemini 2.5 Pro in Google AI Studio](https://aistudio.google.com/prompts/new_chat)
+
 
 
 
